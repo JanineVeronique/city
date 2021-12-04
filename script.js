@@ -12,7 +12,7 @@ let showSunrise= false;
 let showPixel= false;
 
 function preload() {
-  img = loadImage("assets/download.jpg");
+  img = loadImage("assets/portofspain.jpeg");
 }
 
 function setup() {
