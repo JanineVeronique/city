@@ -1,0 +1,16 @@
+body{
+  background-image: url(https://www.travelsafe-abroad.com/wp-content/uploads/cruise-to-port-of-spain-trinidad-and-tobago.jpg)
+}
+
+h1 {
+  color: red;
+  font-family: cursive;
+}
+h3 {
+  color: black;
+  font-family: sans-serif;
+}
+img{
+  border-radius: 100px;
+  width: 1000px;
+}
