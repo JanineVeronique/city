@@ -32,7 +32,7 @@ function setup() {
 }
 
 function draw() {
-  background(100);
+  background("assets/portofspain.jpeg");
   image(img, 0, 0, 400, 500);
 
   if (showSunrise==true){
