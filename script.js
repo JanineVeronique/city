@@ -10,17 +10,16 @@ let rain= [];
 const numOfDrops = 1000;
 let showSunrise= false;
 let showPixel= false;
-
-function preload() {
-  img = loadImage("assets/portofspain.jpeg");
-}
+ function preload() {
+   img = loadImage("assets/portofspain.jpeg");
+ }
 
 function setup() {
-  createCanvas(400, 500);
+  createCanvas(windowWidth, windowHeight);
   fill(240);
   noStroke();
-  background(100);
-  image(img, 0, 0, 400, 500);
+  // background(100);
+   image(img, 0, 0, windowWidth, windowHeight);
 
   for (let i = 0; i < 500; i++) {
     snowflakes.push(new snowflake()); // append snowflake object
@@ -33,8 +32,8 @@ function setup() {
 
 function draw() {
   background("assets/portofspain.jpeg");
-  image(img, 0, 0, 400, 500);
-
+  image(img, 0, 0, windowWidth, windowHeight);
+  // background(255);
   if (showSunrise==true){
   c = color(255, 212, 0);
   fill(c);
