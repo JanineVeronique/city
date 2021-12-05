@@ -6,3 +6,19 @@ canvas {
   display: block;
   position: absolute;
 }
+body{
+  background-image: url(https://ilandvibez.com/wp-content/uploads/2018/02/port-of-spain-at-night.jpg)
+}
+
+h1 {
+  color: red;
+  font-family: cursive;
+}
+h3 {
+  color: black;
+  font-family: sans-serif;
+}
+img{
+  border-radius: 400px;
+  width: 4000px;
+}
