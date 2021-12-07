@@ -9,7 +9,7 @@ let sun = [];
 let rain= [];
 const numOfDrops = 1000;
 let showSunrise= false;
-let showPixel= false;
+// let showPixel= false;
  function preload() {
    img = loadImage("assets/portofspain.jpeg");
  }
@@ -22,7 +22,7 @@ function setup() {
    image(img, 0, 0, windowWidth, windowHeight);
 
   for (let i = 0; i < 500; i++) {
-    snowflakes.push(new snowflake()); // append snowflake object
+    snowflakes.push(new snowflake());
   }
 
     for (let i = 0; i < numOfDrops; i++) {
@@ -44,12 +44,7 @@ function draw() {
   t = frameCount / 60; // update time
   //console.log(t)
   }
-  // create a random number of snowflakes each frame
-  // for (let i = 0; i < random(5); i++) {
-  //   snowflakes.push(new snowflake()); // append snowflake object
-  // }
 
-  // loop through snowflakes with a for..of loop
 
   for (let flake of snowflakes) {
     if (flake.run == true) {
@@ -66,22 +61,7 @@ function draw() {
         }
       }
     }
-  if(showPixel==true){
-   for(let x=0;x<400;x+=5){
-     for(let y=0;y<500;y+=5){
-   let clr = img.get(x, y);
-
-     let r = red(clr) ;
-     let g = green(clr);
-     let b = blue(clr);
-
-     fill(r,g,b);
-       noStroke();
-       ellipse(x,y,5,5);
-
-     }
-   }
-   }
+  /
 
 
 class snowflake {
@@ -154,10 +134,10 @@ function fall() {
   }
 }
 
- function surprise() {
-   console.log("button works!");
-    showPixel=true;
-  }
+ // function surprise() {
+ //   console.log("button works!");
+ //    showPixel=true;
+ //  }
 
 function sunriseShow(){
   showSunrise=true;
